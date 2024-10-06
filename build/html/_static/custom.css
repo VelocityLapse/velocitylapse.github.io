@@ -1,0 +1,9 @@
+html.dark body {
+    background-color: #111314 !important;
+}
+html.dark header {
+    background-color: #111314 !important;
+}
+header img {
+    filter: none !important;
+}
