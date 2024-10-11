@@ -17,7 +17,7 @@ extensions = []
 
 templates_path = ['_templates']
 exclude_patterns = []
-
+html_extra_path = ['extras']
 
 
 # -- Options for HTML output -------------------------------------------------
