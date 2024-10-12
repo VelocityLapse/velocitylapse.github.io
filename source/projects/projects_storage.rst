@@ -8,4 +8,5 @@ When set to internal storage, projects will be saved to ``/storage/emulated/0/An
 
 When set to external storage, projects will be saved to ``/storage/<external_storage_name>/Android/com.velocitylapse.velocitylapse/data/``.
 
-Generally, you will not be able to access these directories due to Android security policies so it is best to export your project to an Image Sequence if you want to access the images.
+.. note::
+    Generally, you will not be able to access these directories due to Android security policies so it is best to export your project to an Image Sequence if you want to access the images.

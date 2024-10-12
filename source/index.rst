@@ -10,7 +10,7 @@ Velocity Lapse is a fully-featured Android app to create stunning time-lapse vid
 
 Currently, Velocity Lapse runs on mobile phone and tablets running Android 6 or higher and is available for download from the Google Play store. Some features are dependent on the device hardware and/or software support and may not be available on certain devices. Wherever there is a feature that requires device support, it will be noted in this guide.
 
-.. note::
+.. tip::
    Long pressing on most interface elements will bring up a tooltip.
 
 
