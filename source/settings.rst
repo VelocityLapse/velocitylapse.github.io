@@ -83,14 +83,28 @@ When this is enabled, a shadow will be applied behind the timestamp text.
 Default Framerate
 ^^^^^^^^^^^^^^^^^
 
-The frame rate used to calculate output video duration, etc in Timelapse mode. This will also be used as the default frame^rate for export to video (if possible).
+The frame rate used to calculate output video duration, etc in Timelapse mode. This will also be used as the default frame rate for export to video (if possible).
+
+Video Codec
+^^^^^^^^^^^
+
+The video codec to use when encoding exported videos.
+
+Velocity Lapse gives you three popular options:
+
+- :guilabel:`AVC (H.264)` - the most widely used and supported video codec today.
+- :guilabel:`HEVC (H.265)` - meant to be the successor to AVC, offering up to 50% better compression and thus smaller video file sizes.
+- :guilabel:`AV1 (AOMedia Video 1)` - a newer, open-source codec which offers even better compression while retaining quality. This option is only available on Android 14+.
+
+.. note::
+    ``HEVC (H.265)`` video is not as widely supported across devices and PCs as ``AVC (H.264)`` encoded video and the ``AV1 (AOMedia Video 1)`` option **does not currently support 4K and 8K video**. Therefore, at this time it is generally recommended that unless you have a specific reason to do otherwise, to stick with ``AVC (H.264)`` (the default).
 
 Video Export Save Location
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The location where videos that are exported from Velocity Lapse will be saved to. Due to Android storage limitations, only the ``/Pictures``, ``/DCIM``, ``/Movies``, or ``/Documents`` folders are supported. 
 
-.. warning::
+.. note::
     On Android 9 and prior, setting to the SD card is unsupported.
 
 Image Export Save Location
@@ -98,7 +112,7 @@ Image Export Save Location
 
 The location where image sequences that are exported from Velocity Lapse will be saved to. Due to Android storage limitations, only the ``/Pictures``, ``/DCIM``, ``/Movies``, or ``/Documents`` folders are supported. 
 
-.. warning::
+.. note::
     On Android 9 and prior, setting to the SD card is unsupported.
 
 Keep Image Aspect Ratio
@@ -112,7 +126,7 @@ Language
 Change the interface language. 
 
 .. hint::
-    If you would like to see Velocity Lapse translated into your language and you know English, you can help out. See https://forum.velocitylapse.com/d/24^help^translate^velocity^lapse for more details.
+    If you would like to see Velocity Lapse translated into your language and you know English, you can help out. See https://forum.velocitylapse.com/d/24-help-translate-velocity-lapse for more details.
 
 Visit User Forum
 ^^^^^^^^^^^^^^^^
