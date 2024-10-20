@@ -93,7 +93,7 @@ The video codec to use when encoding exported videos.
 Velocity Lapse gives you three popular options:
 
 - :guilabel:`AVC (H.264)` - the most widely used and supported video codec today.
-- :guilabel:`HEVC (H.265)` - meant to be the successor to AVC, offering up to 50% better compression and thus smaller video file sizes.
+- :guilabel:`HEVC (H.265)` - meant to be the successor to AVC, offering up to 50% better compression and thus smaller video file sizes. This option is dependent on device support.
 - :guilabel:`AV1 (AOMedia Video 1)` - a newer, open-source codec which offers even better compression while retaining quality. This option is only available on Android 14+.
 
 .. note::
