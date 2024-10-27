@@ -4,9 +4,6 @@ Export
 
 Velocity Lapse can export projects to either MP4 video or an image sequence. 
 
-Format
-======
-
 Select either the :guilabel:`MP4 video` or :guilabel:`Image Sequence` option to set the export format.
 
 

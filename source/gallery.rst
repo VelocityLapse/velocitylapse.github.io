@@ -19,7 +19,7 @@ Tapping the three-dots button will bring up the video options menu to view detai
 Video Options
 -------------
 
-Long-press a video item to bring up the video options menu to view detailed video info or delete the video permanently.
+Long-press on a video item to bring up the video options menu to view detailed video info or delete the video permanently.
 
 
 Sorting Videos
