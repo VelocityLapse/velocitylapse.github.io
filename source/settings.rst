@@ -53,7 +53,10 @@ When creating a new project, you will be prompted to set the project name.
 Apply Timestamp
 ^^^^^^^^^^^^^^^
 
-Apply a date/time stamp to all capture images. This is a global setting, so after this is enabled all future captured images will have a timestamp applied. A preview of the timestamp is shown in Timelapse mode to help you to remember when this setting is enabled.
+Apply a date/time stamp to all images captured in Timelapse and Photolapse mode. 
+
+.. note:: 
+    This is a global setting, so after this is enabled **all future captured images will have a timestamp applied**. A preview of the timestamp is shown in Timelapse mode to help you to remember when this setting is enabled.
 
 Timestamp Format
 ^^^^^^^^^^^^^^^^
@@ -157,8 +160,3 @@ App Version Information
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Tap on the version to copy it to your clipboard.
-
-Social Links
-^^^^^^^^^^^^
-
-Links to the official Velocity Lapse social channels.
