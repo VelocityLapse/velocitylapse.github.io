@@ -25,8 +25,8 @@ html_extra_path = ['extras']
 
 html_theme = 'sphinxawesome_theme'
 html_static_path = ['_static']
-html_favicon = '_static/favicon.webp'
+html_favicon = '_static/favicon.png'
 html_title = 'Velocity Lapse'
-html_logo = '_static/favicon.webp'
+html_logo = '_static/icon.png'
 html_static_path = ['_static']
 html_css_files = ['custom.css']
