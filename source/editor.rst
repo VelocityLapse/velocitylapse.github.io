@@ -2,14 +2,45 @@
 Editor
 ######
 
-The editor displays all of the images in the project. You can preview your time-lapse at ~14fps, delete individual frames (images), and import/export.
+The editor is where you can preview your time-lapse, delete individual images, and import/export.
+
+Appbar
+------
+
+The Appbar displays the project name and the number of frames. In the far left corner is the Export button which will bring up the export options menu so you can export your time-lapse project to video or an image sequence.
+
+Preview 
+-------
+
+The preview displays the currently selected image (called a "frame") and a low-quality preview playback at ~14fps when the play button is tapped. You can jump to start or end of the timeline or use the slider to adjust the current frame.
 
 
-TODO
+Timeline
+--------
 
-Importing Images Into Existing Projects
----------------------------------------
+Along the bottom of the screen is the timeline. The timeline displays the images (called "frames") contained in the project that make up your time-lapse. You can swipe the timeline to scroll the view of images. Tapping on an item selects the frame and displays it in the preview. 
 
-To import images from your gallery into an existing project, tap an existing project to open it in the Editor, and tap the add button. Then tap one of the options to select either a folder of images or individual images. 
+Multi-selection Mode
+^^^^^^^^^^^^^^^^^^^^
 
-The imported images will be added after the last image of the existing project.
+Long-pressing on any item brings you into muti-select mode where you can select multiple frames. 
+
+Along the very top the appbar will change to show three options:
+
+- Select all frames between any two currently selected frames.
+- Export all currently selected frames to your photo gallery.
+- Delete the currently selected frames.
+
+To cancel multi-selection mode, tap the close button in the top-left corner.
+
+
+Adding Images to a Project
+--------------------------
+
+To import images into a project or resume capturing images, tap the add button floating above the timeline to bring up the add images menu. From the add images menu you can choose to:
+
+- Resume Capture/Take Photo
+- Import Folder
+- Import Images
+
+Images will be added after the last frame of the project.
