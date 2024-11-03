@@ -16,6 +16,8 @@ Currently, Velocity Lapse runs on mobile phone and tablets running Android 6 or 
 .. tip::
    Long pressing on most interface elements will bring up a tooltip.
 
+.. note::
+   This guide always reflects the very latest version of Velocity Lapse. Sometimes, it may contain content or references to features for the next version that is not yet public.
 
 .. toctree::
    :maxdepth: 2
@@ -26,6 +28,5 @@ Currently, Velocity Lapse runs on mobile phone and tablets running Android 6 or 
    editor.rst
    import.rst
    export.rst
-   gallery.rst
    settings.rst
    cookbook.rst
