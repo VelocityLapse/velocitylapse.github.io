@@ -80,6 +80,11 @@ Duration
 
 Duration sets the capture time, the amount of time to capture before automatically stopping the capture. If set to infinity, the capture will continue until the stop capture button is tapped. This is another way of setting Frames, which is useful if you have a specific amount of time you want the capture to last.
 
+Playback
+^^^^^^^^
+
+Playback sets the final playback time of the time-lapse video when exported to video with the current framerate and settings. This is another way of setting Frames, which is useful if you have a specific target final video length in mind.
+
 Schedule
 ^^^^^^^^
 
