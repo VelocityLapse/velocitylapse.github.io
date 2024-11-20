@@ -66,6 +66,10 @@ Exposure Value
 
 The EV (exposure value) slider adjusts the camera auto exposure, making the image brighter or darker.
 
+Focus
+^^^^^
+
+Set the camera focus distance manually. A lower focus distance value will focus on close objects (the foreground) and blur the background. Setting a higher focus distance value will focus on objects far away and blur any objects close to the lens.
 
 Photolapse Settings
 -------------------
