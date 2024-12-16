@@ -37,6 +37,6 @@ You can find an informative video tutorial showing how you can create a time-lap
 Star Trails
 ^^^^^^^^^^^
 
-Velocity Lapse has the ability to create star trail time-lapses.
+Velocity Lapse has the ability to create star trail time-lapse videos.
 
 `Click here <https://youtube.com/shorts/xUZl67wRJxM>`_ for quick video demonstrating how the :guilabel:`Light Trails` video effect feature in Velocity Lapse can be used to create star trails.
