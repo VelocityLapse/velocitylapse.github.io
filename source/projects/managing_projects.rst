@@ -20,7 +20,9 @@ Creating Projects
 
 For both Timelapse and Photolapse mode, you can create a new project by tapping on the large, blue :guilabel:`New Timelapse` or :guilabel:`New Photolapse` buttons, respectively.
 
-If the :guilabel:`Ask For A Project Name` setting is enabled in settings, you will be prompted to give a name when creating new projects. Otherwise, a default project name will be set.
+If the :guilabel:`Ask for a project name` setting is enabled in settings, you will be prompted to give a name when creating new projects. Otherwise, a default project name will be set.
+
+Project Preset options will be displayed if the :guilabel:`Show project presets` setting is enabled.
 
 
 Deleting and Renaming Projects

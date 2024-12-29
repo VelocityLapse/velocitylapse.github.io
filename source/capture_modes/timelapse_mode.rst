@@ -135,8 +135,9 @@ Set how long the camera lens stays open to gather light into the lens. Please no
 .. note::
     The shutter speed and ISO ranges are dependent on what your device allows third-party apps to access. This can be very different than what the device native stock camera can access, unfortunately. You can double-check what shutter speed range a particular device allows third-party apps to access by looking at `this device camera database <https://www.camerafv5.com/devices/manufacturers/>`_.
 
-.. important::
-    The camera preview is limited to 1/5 of a second of shutter speed to avoid queuing. This means that when setting shutter speeds longer than 1/5 of a second, it is not WYSIWYG in the preview. The preview may not look right, but the captured photos will look how they should. This is standard behavior for camera apps.
+Following the standard behavior of camera apps, the normal camera preview is limited to 1/5 of a second of shutter speed. This means that when setting shutter speeds longer than 1/5 of a second, it would not be WYSIWYG in the normal preview. 
+
+For this reason, Velocity Lapse has a special preview called the **Long Exposure Preview**. Enabling this preview will enable you to see an accurate, but not real-time, photo preview with the current long-exposure settings.
 
 ISO
 ^^^
