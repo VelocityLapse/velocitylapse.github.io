@@ -26,7 +26,7 @@ If the :guilabel:`Ask for a project name` setting is enabled in settings, you wi
 Creating Projects from Presets
 ------------------------------
 
-When creating a new Timelapse project, preset options for different time-lapse subjects will be displayed. Selecting a preset will give you a quick starting point to adjust the capture and/or camera settings for a particular subject.
+When creating a new Timelapse project, preset options for different time-lapse subjects will be displayed. Selecting a preset will give you a quick starting point to adjust the capture and/or camera settings for a particular subject. 
 
 You can disable showing the preset options when creating a project by disabling the :guilabel:`Show project presets` setting in the app settings.
 
