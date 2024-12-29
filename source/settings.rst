@@ -48,7 +48,12 @@ With this setting enabled, the app will prevent the screen from automatically tu
 Ask For A Project Name
 ^^^^^^^^^^^^^^^^^^^^^^
 
-When creating a new project, you will be prompted to set the project name.
+If enabled, when creating a new project you will be prompted to set the project name.
+
+Show project presets
+^^^^^^^^^^^^^^^^^^^^
+
+If enabled, when creating a new project the project preset options that are supported by your device will be displayed.
 
 Apply Timestamp
 ^^^^^^^^^^^^^^^
