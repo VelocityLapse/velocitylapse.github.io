@@ -24,4 +24,7 @@ Choose individual images from your photo gallery to import as a new Timelapse pr
 
 ---
 
+.. note::
+    You must select at least 2 images and have enough storage in order to import.
+
 Once imported, you can delete frames and export to video or image sequence like a normal Timelapse project.
