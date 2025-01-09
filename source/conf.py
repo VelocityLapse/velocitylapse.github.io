@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Velocity Lapse'
-copyright = '2024, Noah Rahm'
+copyright = '2025, Noah Rahm'
 author = 'Noah Rahm'
 
 # -- General configuration ---------------------------------------------------
