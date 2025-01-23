@@ -34,7 +34,7 @@ You can disable showing the preset options when creating a project by disabling 
 Deleting and Renaming Projects
 ------------------------------
 
-Tapping on the three dots button brings up a menu to rename the project,saving the project settings as a preset, or delete the project and images permanently.
+Tapping on the three dots button brings up a menu to rename the project, save the project settings as a preset, or delete the project and images permanently.
 
 
 Sorting Projects
