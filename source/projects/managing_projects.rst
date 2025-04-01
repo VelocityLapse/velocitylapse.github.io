@@ -40,7 +40,8 @@ Tapping on the three dots button brings up the project options menu. This menu a
 Saving Project Settings as a Preset
 -----------------------------------
 
-.. note:: This feature is only available for Timelapse projects.
+.. note:: 
+    This feature is only available for Timelapse projects.
 
 In the project options menu, tap :guilabel:`Save project settings as preset`. This will bring up a dialog to choose which preset to assign the project settings. 
 
