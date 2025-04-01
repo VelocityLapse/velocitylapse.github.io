@@ -8,7 +8,7 @@ You can switch between Timelapse and Photolapse projects by tapping the tabs at 
 
 Each project is shown with a thumbnail of the most recent image, the name of the project, the date the project was last edited, the number of images (called "frames") in the project, and the image resolution.
 
-There are also icons displayed to indicate whether the project was created from imported images or if the project has been exported to video or an image sequence. These indicators are useful for determining whether you've saved your time-lapse elsewhere so it is safe for you to delete the project.
+There are also icons displayed to indicate whether the project was created from imported images or if the project has been exported to video or an image sequence. These indicators are useful for determining whether you've saved your time-lapse elsewhere. That way you can be sure it is safe to delete the project.
 
 - The file up icon indicates that the project was created by importing images.
 - The single check-mark icon indicates that the project has been exported to either video OR an image sequence.
@@ -39,6 +39,8 @@ Tapping on the three dots button brings up the project options menu. This menu a
 
 Saving Project Settings as a Preset
 -----------------------------------
+
+.. note:: This feature is only available for Timelapse projects.
 
 In the project options menu, tap :guilabel:`Save project settings as preset`. This will bring up a dialog to choose which preset to assign the project settings. 
 
