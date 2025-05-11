@@ -38,12 +38,12 @@ Apply an effect to be applied during export. None (the default) doesn't apply an
 Image Sequence
 --------------
 
-Velocity Lapse capture JPG images so you full control over your project and can export the image sequence for use in other applications.
+Velocity Lapse captures JPG and/or RAW (DNG) images on supported devices so you have full control over your project. You can then export the image sequence for use in other applications.
 
 Location
 ^^^^^^^^
 
-The output location where the JPG image sequence will be saved. This can be changed by setting the folder of the :guilabel:`Image Export Save Location` setting.
+The output location where the JPG and/or RAW (DNG) image sequence will be saved. This can be changed by setting the folder of the :guilabel:`Image Export Save Location` setting.
 
 Frames
 ^^^^^^
