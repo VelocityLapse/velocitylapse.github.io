@@ -19,6 +19,23 @@ Filename Format
 
 The format used for naming the captured image files. Unless you have a specific reason to change this, in most cases you will want to leave it set to Frame Number and Timestamp (the default).
 
+File Format
+^^^^^^^^^^^
+
+.. note::
+    This beta feature is available for testing only in Velocity Lapse PRO v1.5.
+
+The file format(s) that frames will be saved to during Timelapse mode captures. 
+
+- :guilabel:`JPG Only` will save each frame as a JPG file. 
+- :guilabel:`RAW + JPG` will save a RAW (DNG) file and a JPG file for each frame. This option is displayed if at least one of your device cameras support RAW (DNG) capture. When enabled, during capture, both a JPG and DNG file will be saved. Please note that Velocity Lapse will only show JPG files in the editor. You can export the timelapse project to an image sequence as usual and you will find both files for each frame.
+
+.. admonition:: Special Considerations For RAW (DNG) Capture
+
+    - RAW photographs store the data as it was captured by the sensor, with no processing applied. 
+    - RAW files have greater flexibility over JPG when editing, but the resulting file sizes are huge.
+    - Date/timestamps do not apply to RAW (DNG) captures.
+
 Default Capture Resolution
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
