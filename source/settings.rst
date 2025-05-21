@@ -25,10 +25,10 @@ File Format
 .. note::
     This beta feature is available for testing only in Velocity Lapse PRO v1.5.
 
-The file format(s) that frames will be saved to during Timelapse mode captures. 
+The file format(s) that frames will be saved to during Timelapse and Photolapse mode captures. 
 
 - :guilabel:`JPG Only` will save each frame as a JPG file. 
-- :guilabel:`RAW + JPG` will save a RAW (DNG) file and a JPG file for each frame. This option is displayed if at least one of your device cameras support RAW (DNG) capture. When enabled, during capture, both a JPG and DNG file will be saved. Please note that Velocity Lapse will only show JPG files in the editor. You can export the timelapse project to an image sequence as usual and you will find both files for each frame.
+- :guilabel:`RAW + JPG` will save a RAW (DNG) file and a JPG file for each frame. This option is displayed if at least one of your device cameras support RAW (DNG) capture. When enabled, during capture, both a JPG and DNG file will be saved. Please note that Velocity Lapse will only show JPG files in the editor. You can export the project to an image sequence as usual and you will find both files for each frame.
 
 .. admonition:: Special Considerations For RAW (DNG) Capture
 
