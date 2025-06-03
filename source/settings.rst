@@ -22,9 +22,6 @@ The format used for naming the captured image files. Unless you have a specific 
 File Format
 ^^^^^^^^^^^
 
-.. note::
-    This beta feature is available for testing only in Velocity Lapse PRO v1.5.
-
 The file format(s) that frames will be saved to during Timelapse and Photolapse mode captures. 
 
 - :guilabel:`JPG Only` will save each frame as a JPG file. 
