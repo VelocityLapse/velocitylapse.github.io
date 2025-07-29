@@ -112,30 +112,31 @@ Video Codec
 
 The video codec to use when encoding exported videos.
 
-Velocity Lapse gives you three popular options:
+Velocity Lapse gives you four popular options, depending on your device:
 
 - :guilabel:`AVC (H.264)` - the most widely used and supported video codec today.
 - :guilabel:`HEVC (H.265)` - meant to be the successor to AVC, offering up to 50% better compression and thus smaller video file sizes. This option is dependent on device support.
-- :guilabel:`AV1 (AOMedia Video 1)` - a newer, open-source codec which offers even better compression while retaining quality. This option is only available on Android 14+.
+- :guilabel:`AV1 (AOMedia Video 1)` - a newer, open-source codec which offers even better compression while retaining quality. This option is only available on devices running Android 14+.
+- :guilabel:`APV (Advanced Professional Video)` -  a new codec designed to be used for professional level high quality video recording and post production. This option is only available for devices running Android 16+.
 
 .. note::
-    ``HEVC (H.265)`` video is not as widely supported across devices and PCs as ``AVC (H.264)`` encoded video and the ``AV1 (AOMedia Video 1)`` option **does not currently support 4K and 8K video**. Therefore, at this time it is generally recommended that unless you have a specific reason to do otherwise, to stick with ``AVC (H.264)`` (the default).
+    ``HEVC (H.265)`` video is not as widely supported across devices and PCs as ``AVC (H.264)`` encoded video and the ``AV1 (AOMedia Video 1)`` option **does not currently support 4K and 8K video**. Therefore, at this time it is generally recommended that unless you have a specific reason to do otherwise, to stick with ``AVC (H.264)`` (the default) or `APV (Advanced Professional Video)` if you need more control.
 
 Save Exported Videos To
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-The location where videos that are exported from Velocity Lapse will be saved to. Due to Android storage limitations, only the ``/Pictures``, ``/DCIM``, ``/Movies``, or ``/Documents`` folders are supported. 
+The location where videos that are exported from Velocity Lapse will be saved to. Due to Android storage limitations, only the ``/Pictures``, ``/DCIM``, ``/Movies``, or ``/Documents`` folders **and subfolders** of those locations are supported. 
 
 .. note::
-    On Android 9 and prior, setting to the SD card is unsupported.
+    On Android 9 and prior, setting to the SD card is not supported.
 
 Save Exported Image Sequences To
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The location where image sequences that are exported from Velocity Lapse will be saved to. Due to Android storage limitations, only the ``/Pictures``, ``/DCIM``, ``/Movies``, or ``/Documents`` folders are supported. 
+The location where image sequences that are exported from Velocity Lapse will be saved to. Due to Android storage limitations, only the ``/Pictures``, ``/DCIM``, ``/Movies``, or ``/Documents`` folders **and subfolders** of those locations are supported. 
 
 .. note::
-    On Android 9 and prior, setting to the SD card is unsupported.
+    On Android 9 and prior, setting to the SD card is not supported.
 
 Keep Image Aspect Ratio
 ^^^^^^^^^^^^^^^^^^^^^^^

@@ -105,7 +105,7 @@ Available Lenses
 The available lenses for the current camera direction are displayed. Tapping on a lens will switch the current camera preview to that lens. 
 
 .. note::
-    If only one lens is displayed, your device may not support other lenses or the device does not give access to other lenses to third-party apps through the standard camera API.
+    If only one lens is displayed, your device may not support other lenses or the device does not give access to other lenses to third-party apps through the standard camera API. You can also try adjusting the camera zoom which will automatically switch between lenses on many devices.
 
 Flashlight
 ^^^^^^^^^^
@@ -130,7 +130,10 @@ Set the camera white balance to auto, to a specific Kelvin scale value manually 
 Shutter Speed
 ^^^^^^^^^^^^^
 
-Set how long the camera lens stays open to gather light into the lens. Please note that shutter speed and ISO must be set together when in manual mode.
+Set how long the camera lens stays open to gather light into the lens. 
+
+.. hint::
+    Please note that shutter speed and ISO will both be set to manual when in manual mode for devices running Android 15 or lower. Starting with Android 16, Velocity Lapse takes advantage of new APIs for shutter and ISO priority modes so that you can set one manually while keeping the other in auto.
 
 .. note::
     The shutter speed and ISO ranges are dependent on what your device allows third-party apps to access. This can be very different than what the device native stock camera can access, unfortunately. You can double-check what shutter speed range a particular device allows third-party apps to access by looking at `this device camera database <https://www.camerafv5.com/devices/manufacturers/>`_.
@@ -142,7 +145,11 @@ For this reason, Velocity Lapse has a special preview called the **Long Exposure
 ISO
 ^^^
 
-Set the camera ISO, which controls the brightness of the image at the cost of more noise. Please note that shutter speed and ISO must be set together when in manual mode.
+Set the camera ISO, which controls the brightness of the image at the cost of more noise. 
+
+.. hint::
+    Please note that shutter speed and ISO will both be set to manual when in manual mode for devices running Android 15 or lower. Starting with Android 16, Velocity Lapse takes advantage of new APIs for shutter and ISO priority modes so that you can set one manually while keeping the other in auto.
+
 
 AE Button
 ^^^^^^^^^
