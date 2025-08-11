@@ -10,7 +10,7 @@ Select either the :guilabel:`MP4 video` or :guilabel:`Image Sequence` option to 
 MP4 Video
 ---------
 
-MP4 video is a widely used video file format (called a "container"). Velocity Lapse exports ``AVC/H.264``, ``HEVC/H.265``, or ``AV1 (AOMedia Video 1)``  MP4 video, depending on which video codec option you set in Settings.
+MP4 video is a widely used video file format (called a "container"). Velocity Lapse exports ``AVC/H.264``, ``HEVC/H.265``, ``AV1 (AOMedia Video 1)`` or ``APV (Advanced Professional Video)`` MP4 video, depending on which video codec option you set in Settings.
 
 The settings from top to bottom:
 
