@@ -94,6 +94,9 @@ Enabling Schedule will schedule the time-lapse capture for a period of time from
 Camera Settings
 ---------------
 
+.. warning::
+    If you see a star (*) beside the shutter/ISO/focus/white balance values, then your device reports that is **does not** support manual camera settings. Velocity Lapse allows you to set them anyway because sometimes the manual camera settings will work despite the device not reporting it. However, please note that in this case there is no guarantee and the controls may not work as expected or at all.
+
 Flip Camera Direction
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -133,7 +136,7 @@ Shutter Speed
 Set how long the camera lens stays open to gather light into the lens. 
 
 .. hint::
-    Please note that shutter speed and ISO will both be set to manual when in manual mode for devices running Android 15 or lower. Starting with Android 16, Velocity Lapse takes advantage of new APIs for shutter and ISO priority modes so that you can set one manually while keeping the other in auto.
+    Please note that shutter speed and ISO will both be set to manual when in manual mode for devices running Android 15 or lower. Starting with Android 16, Velocity Lapse takes advantage of new APIs for shutter and ISO priority modes so that you can set one manually while keeping the other in auto. **(Note: As of 8/21/2025 this feature is not yet available to the public.)**
 
 .. note::
     The shutter speed and ISO ranges are dependent on what your device allows third-party apps to access. This can be very different than what the device native stock camera can access, unfortunately. You can double-check what shutter speed range a particular device allows third-party apps to access by looking at `this device camera database <https://www.camerafv5.com/devices/manufacturers/>`_.
@@ -148,7 +151,7 @@ ISO
 Set the camera ISO, which controls the brightness of the image at the cost of more noise. 
 
 .. hint::
-    Please note that shutter speed and ISO will both be set to manual when in manual mode for devices running Android 15 or lower. Starting with Android 16, Velocity Lapse takes advantage of new APIs for shutter and ISO priority modes so that you can set one manually while keeping the other in auto.
+    Please note that shutter speed and ISO will both be set to manual when in manual mode for devices running Android 15 or lower. Starting with Android 16, Velocity Lapse takes advantage of new APIs for shutter and ISO priority modes so that you can set one manually while keeping the other in auto. **(Note: As of 8/21/2025 this feature is not yet available to the public.)**
 
 
 AE Button
@@ -175,3 +178,9 @@ Exposure Value
 ^^^^^^^^^^^^^^
 
 The EV (exposure value) slider adjusts the camera auto exposure, making the image brighter or darker. Setting this will set the camera back to auto exposure.
+
+
+Bluetooth/Volume Button Capture
+-------------------------------
+
+With Velocity Lapse PRO you can start and stop captures with a Bluetooth remote or your device volume buttons.

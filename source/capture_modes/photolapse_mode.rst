@@ -2,7 +2,7 @@
 Photolapse Mode
 ###############
 
-Photolapse Mode allows you to create time-lapses, hyper-lapses, or stop-motion animations by capturing individual photos over an extended period of time without leaving your device on location. At a time you decide, line up the last image with the previous photo, capture a photo, and repeat. 
+Photolapse Mode allows you to create time-lapses, hyper-lapses, or stop-motion animations by capturing individual photos over an extended period of time without having to leave your device on location. At a time you decide, line up the last image with the previous photo, capture a photo, and repeat. 
 
 Photolapse Mode is great for capturing time-lapses of long events like construction projects or plant growth that can last over weeks, months, or even years.
 
@@ -93,3 +93,9 @@ Overlay Opacity
 ^^^^^^^^^^^^^^^
 
 Change the opacity of the previous photo that is placed over the camera preview.
+
+
+Bluetooth/Volume Button Capture
+-------------------------------
+
+With Velocity Lapse PRO you can capture photos with a Bluetooth remote or your device volume buttons.
