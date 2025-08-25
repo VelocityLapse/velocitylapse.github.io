@@ -95,7 +95,7 @@ Camera Settings
 ---------------
 
 .. warning::
-    If you see a star (*) beside the shutter/ISO/focus/white balance values, then your device reports that is **does not** support manual camera settings. Velocity Lapse allows you to set them anyway because sometimes the manual camera settings will work despite the device not reporting it. However, please note that in this case there is no guarantee and the controls may not work as expected or at all.
+    If you see a star (*) beside the shutter/ISO/focus/white balance values, then your device reports that the current lens **does not** support manual camera settings. Velocity Lapse allows you to set them anyway because sometimes the manual camera settings will work despite the device not reporting it. However, please note that in this case there is no guarantee and the controls may not work as expected or at all.
 
 Flip Camera Direction
 ^^^^^^^^^^^^^^^^^^^^^

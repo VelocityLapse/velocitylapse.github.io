@@ -71,6 +71,9 @@ Focus
 
 Set the camera focus distance manually. A lower focus distance value will focus on close objects (the foreground) and blur the background. Setting a higher focus distance value will focus on objects far away and blur any objects close to the lens.
 
+.. warning::
+    If you see a star (*) beside the focus value, then your device reports that the current lens **does not** support manual camera settings and thus does not support manual focus. Velocity Lapse allows you to set it anyway because sometimes the manual camera settings will work despite the device not reporting it. However, please note that in this case there is no guarantee and the control may not work as expected or at all.
+
 Photolapse Settings
 -------------------
 
