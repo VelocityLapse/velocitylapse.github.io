@@ -139,7 +139,10 @@ Set how long the camera lens stays open to gather light into the lens.
     Please note that shutter speed and ISO will both be set to manual when in manual mode for devices running Android 15 or lower. Starting with Android 16, Velocity Lapse takes advantage of new APIs for shutter and ISO priority modes so that you can set one manually while keeping the other in auto. **(Note: As of 8/21/2025 this feature is not yet available to the public.)**
 
 .. note::
-    The shutter speed and ISO ranges are dependent on what your device allows third-party apps to access. This can be very different than what the device native stock camera can access, unfortunately. You can double-check what shutter speed range a particular device allows third-party apps to access by looking at `this device camera database <https://www.camerafv5.com/devices/manufacturers/>`_.
+    The shutter speed and ISO ranges are dependent on what your device allows third-party apps to access. This can be very different than what the device native stock camera can access, unfortunately. You can double-check what shutter speed range a particular device allows third-party apps to access by looking at `this device camera database <https://www.camerafv5.com/devices/manufacturers/>`_. 
+    
+.. note::
+    Experimental feature: Velocity Lapse extends the shutter speed range past the normal amounts for certain device models, but again, this still depends on the device.
 
 Following the standard behavior of camera apps, the normal camera preview is limited to 1/5 of a second of shutter speed. This means that when setting shutter speeds longer than 1/5 of a second, it would not be WYSIWYG in the normal preview. 
 
