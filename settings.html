@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html :class="{'dark': darkMode === 'dark' || (darkMode === 'system' &amp;&amp; window.matchMedia('(prefers-color-scheme: dark)').matches)}" class="scroll-smooth" data-content_root="./" lang="en" x-data="{ darkMode: localStorage.getItem('darkMode') || localStorage.setItem('darkMode', 'system'), activeSection: '' }" x-init="$watch('darkMode', val =&gt; localStorage.setItem('darkMode', val))">
+<head>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+<meta content="white" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="black" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Settings | Velocity Lapse</title>
+<meta content="Settings | Velocity Lapse" property="og:title"/>
+<meta content="Settings | Velocity Lapse" name="twitter:title"/>
+<link href="_static/pygments.css?v=8d216cef" rel="stylesheet" type="text/css"/>
+<link href="_static/theme.css?v=42baaae4" rel="stylesheet" type="text/css"/>
+<link href="_static/custom.css?v=28a20a88" rel="stylesheet" type="text/css"/>
+<link href="_static/favicon.png" rel="icon"/>
+<link href="search.html" rel="search" title="Search"/>
+<link href="genindex.html" rel="index" title="Index"/>
+<link href="cookbook.html" rel="next" title="Cookbook"/>
+<link href="export.html" rel="prev" title="Export"/>
+<script>
+    <!-- Prevent Flash of wrong theme -->
+      const userPreference = localStorage.getItem('darkMode');
+      let mode;
+      if (userPreference === 'dark' || window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        mode = 'dark';
+        document.documentElement.classList.add('dark');
+      } else {
+        mode = 'light';
+      }
+      if (!userPreference) {localStorage.setItem('darkMode', mode)}
+    </script>
+</head>
+<body :class="{ 'overflow-hidden': showSidebar }" class="min-h-screen font-sans antialiased bg-background text-foreground" x-data="{ showSidebar: false, showScrollTop: false }">
+<div @click.self="showSidebar = false" class="fixed inset-0 z-50 overflow-hidden bg-background/80 backdrop-blur-sm md:hidden" x-cloak="" x-show="showSidebar"></div><div class="relative flex flex-col min-h-screen" id="page"><a class="absolute top-0 left-0 z-[100] block bg-background p-4 text-xl transition -translate-x-full opacity-0 focus:translate-x-0 focus:opacity-100" href="#content">
+      Skip to content
+    </a><header class="sticky top-0 z-40 w-full border-b shadow-sm border-border supports-backdrop-blur:bg-background/60 bg-background/95 backdrop-blur"><div class="container flex items-center h-14">
+<div class="hidden mr-4 md:flex">
+<a class="flex items-center mr-6" href="index.html">
+<img alt="Logo" class="mr-2 dark:invert" height="24" src="_static/icon.png" width="24"/><span class="hidden font-bold sm:inline-block text-clip whitespace-nowrap">Velocity Lapse</span>
+</a></div><button @click="showSidebar = true" class="inline-flex items-center justify-center h-10 px-0 py-2 mr-2 text-base font-medium transition-colors rounded-md hover:text-accent-foreground hover:bg-transparent md:hidden" type="button">
+<svg aria-hidden="true" fill="currentColor" height="24" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M152.587 825.087q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440Zm0-203.587q-19.152 0-32.326-13.174T107.087 576q0-19.152 13.174-32.326t32.326-13.174h320q19.152 0 32.326 13.174T518.087 576q0 19.152-13.174 32.326T472.587 621.5h-320Zm0-203.587q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440ZM708.913 576l112.174 112.174q12.674 12.674 12.674 31.826t-12.674 31.826Q808.413 764.5 789.261 764.5t-31.826-12.674l-144-144Q600 594.391 600 576t13.435-31.826l144-144q12.674-12.674 31.826-12.674t31.826 12.674q12.674 12.674 12.674 31.826t-12.674 31.826L708.913 576Z"></path>
+</svg>
+<span class="sr-only">Toggle navigation menu</span>
+</button>
+<div class="flex items-center justify-between flex-1 space-x-2 sm:space-x-4 md:justify-end">
+<div class="flex-1 w-full md:w-auto md:flex-none"><form @keydown.k.window.meta="$refs.search.focus()" action="search.html" class="relative flex items-center group" id="searchbox" method="get">
+<input aria-label="Search the docs" class="inline-flex items-center font-medium transition-colors bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-offset-background border border-input hover:bg-accent focus:bg-accent hover:text-accent-foreground focus:text-accent-foreground hover:placeholder-accent-foreground py-2 px-4 relative h-9 w-full justify-start rounded-[0.5rem] text-sm text-muted-foreground sm:pr-12 md:w-40 lg:w-64" id="search-input" name="q" placeholder="Search ..." type="search" x-ref="search"/>
+<kbd class="pointer-events-none absolute right-1.5 top-2 hidden h-5 select-none text-muted-foreground items-center gap-1 rounded border border-border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex group-hover:bg-accent group-hover:text-accent-foreground">
+<span class="text-xs">⌘</span>
+    K
+  </kbd>
+</form>
+</div>
+<nav class="flex items-center space-x-1">
+<button @click="darkMode = darkMode === 'light' ? 'dark' : 'light'" aria-label="Color theme switcher" class="relative inline-flex items-center justify-center px-0 text-sm font-medium transition-colors rounded-md hover:bg-accent hover:text-accent-foreground h-9 w-9" type="button">
+<svg class="absolute transition-all scale-100 rotate-0 dark:-rotate-90 dark:scale-0" fill="currentColor" height="24" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M480 685q45.456 0 77.228-31.772Q589 621.456 589 576q0-45.456-31.772-77.228Q525.456 467 480 467q-45.456 0-77.228 31.772Q371 530.544 371 576q0 45.456 31.772 77.228Q434.544 685 480 685Zm0 91q-83 0-141.5-58.5T280 576q0-83 58.5-141.5T480 376q83 0 141.5 58.5T680 576q0 83-58.5 141.5T480 776ZM80 621.5q-19.152 0-32.326-13.174T34.5 576q0-19.152 13.174-32.326T80 530.5h80q19.152 0 32.326 13.174T205.5 576q0 19.152-13.174 32.326T160 621.5H80Zm720 0q-19.152 0-32.326-13.174T754.5 576q0-19.152 13.174-32.326T800 530.5h80q19.152 0 32.326 13.174T925.5 576q0 19.152-13.174 32.326T880 621.5h-80Zm-320-320q-19.152 0-32.326-13.174T434.5 256v-80q0-19.152 13.174-32.326T480 130.5q19.152 0 32.326 13.174T525.5 176v80q0 19.152-13.174 32.326T480 301.5Zm0 720q-19.152 0-32.326-13.17Q434.5 995.152 434.5 976v-80q0-19.152 13.174-32.326T480 850.5q19.152 0 32.326 13.174T525.5 896v80q0 19.152-13.174 32.33-13.174 13.17-32.326 13.17ZM222.174 382.065l-43-42Q165.5 327.391 166 308.239t13.174-33.065q13.435-13.674 32.587-13.674t32.065 13.674l42.239 43q12.674 13.435 12.555 31.706-.12 18.272-12.555 31.946-12.674 13.674-31.445 13.413-18.772-.261-32.446-13.174Zm494 494.761-42.239-43q-12.674-13.435-12.674-32.087t12.674-31.565Q686.609 756.5 705.38 757q18.772.5 32.446 13.174l43 41.761Q794.5 824.609 794 843.761t-13.174 33.065Q767.391 890.5 748.239 890.5t-32.065-13.674Zm-42-494.761Q660.5 369.391 661 350.62q.5-18.772 13.174-32.446l41.761-43Q728.609 261.5 747.761 262t33.065 13.174q13.674 13.435 13.674 32.587t-13.674 32.065l-43 42.239q-13.435 12.674-31.706 12.555-18.272-.12-31.946-12.555Zm-495 494.761Q165.5 863.391 165.5 844.239t13.674-32.065l43-42.239q13.435-12.674 32.087-12.674t31.565 12.674Q299.5 782.609 299 801.38q-.5 18.772-13.174 32.446l-41.761 43Q231.391 890.5 212.239 890t-33.065-13.174ZM480 576Z"></path>
+</svg>
+<svg class="absolute transition-all scale-0 rotate-90 dark:rotate-0 dark:scale-100" fill="currentColor" height="24" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M480 936q-151 0-255.5-104.5T120 576q0-138 90-239.5T440 218q25-3 39 18t-1 44q-17 26-25.5 55t-8.5 61q0 90 63 153t153 63q31 0 61.5-9t54.5-25q21-14 43-1.5t19 39.5q-14 138-117.5 229T480 936Zm0-80q88 0 158-48.5T740 681q-20 5-40 8t-40 3q-123 0-209.5-86.5T364 396q0-20 3-40t8-40q-78 32-126.5 102T200 576q0 116 82 198t198 82Zm-10-270Z"></path>
+</svg>
+</button>
+</nav>
+</div>
+</div>
+</header>
+<div class="flex-1"><div class="container flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10"><aside :aria-hidden="!showSidebar" :class="{ 'translate-x-0': showSidebar }" class="fixed inset-y-0 left-0 md:top-14 z-50 md:z-30 bg-background md:bg-transparent transition-all duration-100 -translate-x-full md:translate-x-0 ml-0 p-6 md:p-0 md:-ml-2 md:h-[calc(100vh-3.5rem)] w-5/6 md:w-full shrink-0 overflow-y-auto border-r border-border md:sticky" id="left-sidebar">
+<a class="!justify-start text-sm md:!hidden bg-background" href="index.html">
+<img alt="Logo" class="mr-2 dark:invert" height="16" src="_static/icon.png" width="16"/><span class="font-bold text-clip whitespace-nowrap">Velocity Lapse</span>
+</a>
+<div class="relative overflow-hidden md:overflow-auto my-4 md:my-0 h-[calc(100vh-8rem)] md:h-auto">
+<div class="overflow-y-auto h-full w-full relative pr-6"><nav class="table w-full min-w-full my-6 lg:my-8">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="projects/index.html">Projects<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="projects/managing_projects.html">Managing Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects/projects_storage.html">Changing Project Storage</a></li>
+</ul>
+</li>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="capture_modes/index.html">Capture Modes<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="capture_modes/timelapse_mode.html">Timelapse Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capture_modes/photolapse_mode.html">Photolapse Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="editor.html">Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import.html">Import</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export.html">Export</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cookbook.html">Cookbook</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<button @click="showSidebar = false" class="absolute md:hidden right-4 top-4 rounded-sm opacity-70 transition-opacity hover:opacity-100" type="button">
+<svg class="h-4 w-4" fill="currentColor" height="24" stroke="none" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M480 632 284 828q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536 576l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480 632Z"></path>
+</svg>
+</button>
+</aside>
+<main class="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_300px]">
+<div class="w-full min-w-0 mx-auto">
+<nav aria-label="breadcrumbs" class="flex items-center mb-4 space-x-1 text-sm text-muted-foreground">
+<a class="overflow-hidden text-ellipsis whitespace-nowrap hover:text-foreground" href="index.html">
+<span class="hidden md:inline">Velocity Lapse</span>
+<svg aria-label="Home" class="md:hidden" fill="currentColor" height="18" stroke="none" viewbox="0 96 960 960" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M240 856h120V616h240v240h120V496L480 316 240 496v360Zm-80 80V456l320-240 320 240v480H520V696h-80v240H160Zm320-350Z"></path>
+</svg>
+</a>
+<div class="mr-1">/</div><span aria-current="page" class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap">Settings</span>
+</nav>
+<div id="content" role="main">
+<section id="settings">
+<h1>Settings<a class="headerlink" href="#settings" title="Link to this heading">¶</a></h1>
+<p>The settings screen allows you to change global and specific options for how the app behaves and more.</p>
+<section id="id1">
+<h2>Settings<a class="headerlink" href="#id1" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#id1'">¶</a></h2>
+<p>From top to bottom:</p>
+<section id="share-feedback-or-suggestion">
+<h3>Share Feedback Or Suggestion<a class="headerlink" href="#share-feedback-or-suggestion" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#share-feedback-or-suggestion'">¶</a></h3>
+<p>Help make Velocity Lapse better by share your feedback and comments with me (the developer).</p>
+</section>
+<section id="filename-format">
+<h3>Filename Format<a class="headerlink" href="#filename-format" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#filename-format'">¶</a></h3>
+<p>The format used for naming the captured image files. Unless you have a specific reason to change this, in most cases you will want to leave it set to Frame Number and Timestamp (the default).</p>
+</section>
+<section id="file-format">
+<h3>File Format<a class="headerlink" href="#file-format" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#file-format'">¶</a></h3>
+<p>The file format(s) that frames will be saved to during Timelapse and Photolapse mode captures.</p>
+<ul class="simple">
+<li><p><span class="guilabel">JPG Only</span> will save each frame as a JPG file.</p></li>
+<li><p><span class="guilabel">RAW + JPG</span> will save a RAW (DNG) file and a JPG file for each frame. This option is displayed if at least one of your device cameras support RAW (DNG) capture. When enabled, during capture, both a JPG and DNG file will be saved. Please note that Velocity Lapse will only show JPG files in the editor. You can export the project to an image sequence as usual and you will find both files for each frame.</p></li>
+</ul>
+<div class="admonition-special-considerations-for-raw-dng-capture admonition">
+<p class="admonition-title">Special Considerations For RAW (DNG) Capture</p>
+<ul class="simple">
+<li><p>RAW photographs store the data as it was captured by the sensor, with no processing applied.</p></li>
+<li><p>RAW files have greater flexibility over JPG when editing, but the resulting file sizes are huge.</p></li>
+<li><p>Date/timestamps do not apply to RAW (DNG) captures.</p></li>
+</ul>
+</div>
+</section>
+<section id="default-capture-resolution">
+<h3>Default Capture Resolution<a class="headerlink" href="#default-capture-resolution" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#default-capture-resolution'">¶</a></h3>
+<p>The default capture resolution that should be set when creating a new Timelapse or Photolapse mode project. This saves the time and hassle of setting the resolution for each new project, especially if you always shoot in 4K, for example.</p>
+</section>
+<section id="default-capture-time-delay">
+<h3>Default Capture Time Delay<a class="headerlink" href="#default-capture-time-delay" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#default-capture-time-delay'">¶</a></h3>
+<p>The default capture time delay that should be set when creating a new Timelapse project.</p>
+</section>
+<section id="flashlight-auto-mode">
+<h3>Flashlight Auto Mode<a class="headerlink" href="#flashlight-auto-mode" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#flashlight-auto-mode'">¶</a></h3>
+<p>When the flashlight is enabled in Timelapse mode, the flashlight will automatically turn on and off.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This only applies when the interval is set to 2 seconds or longer. If this setting is disabled, when the flashlight is enabled it will stay on for the entire length of the capture.</p>
+</div>
+</section>
+<section id="keep-screen-awake">
+<h3>Keep Screen Awake<a class="headerlink" href="#keep-screen-awake" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#keep-screen-awake'">¶</a></h3>
+<p>With this setting enabled, the app will prevent the screen from automatically turning off during Timelapse captures.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This uses Android wake lock, so it does have the potential to drain the device battery faster.</p>
+</div>
+</section>
+<section id="ask-for-a-project-name">
+<h3>Ask For A Project Name<a class="headerlink" href="#ask-for-a-project-name" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ask-for-a-project-name'">¶</a></h3>
+<p>If enabled, when creating a new project you will be prompted to set the project name.</p>
+</section>
+<section id="show-project-presets">
+<h3>Show project presets<a class="headerlink" href="#show-project-presets" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#show-project-presets'">¶</a></h3>
+<p>If enabled, when creating a new project the project preset options that are supported by your device will be displayed.</p>
+</section>
+<section id="apply-timestamp">
+<h3>Apply Timestamp<a class="headerlink" href="#apply-timestamp" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#apply-timestamp'">¶</a></h3>
+<p>Apply a date/time stamp to all images captured in Timelapse and Photolapse mode.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a global setting, so after this is enabled <strong>all future captured images will have a timestamp applied</strong>. A preview of the timestamp is shown in Timelapse mode to help you to remember when this setting is enabled.</p>
+</div>
+</section>
+<section id="timestamp-format">
+<h3>Timestamp Format<a class="headerlink" href="#timestamp-format" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#timestamp-format'">¶</a></h3>
+<p>The date/time format used for the timestamp text.</p>
+</section>
+<section id="timestamp-position">
+<h3>Timestamp Position<a class="headerlink" href="#timestamp-position" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#timestamp-position'">¶</a></h3>
+<p>The position of where the timestamp will be place on the capture image.</p>
+</section>
+<section id="timestamp-size">
+<h3>Timestamp Size<a class="headerlink" href="#timestamp-size" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#timestamp-size'">¶</a></h3>
+<p>The size of the timestamp text.</p>
+</section>
+<section id="timestamp-color">
+<h3>Timestamp Color<a class="headerlink" href="#timestamp-color" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#timestamp-color'">¶</a></h3>
+<p>The color of the timestamp text.</p>
+</section>
+<section id="timestamp-shadow">
+<h3>Timestamp Shadow<a class="headerlink" href="#timestamp-shadow" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#timestamp-shadow'">¶</a></h3>
+<p>When this is enabled, a shadow will be applied behind the timestamp text.</p>
+</section>
+<section id="default-framerate">
+<h3>Default Framerate<a class="headerlink" href="#default-framerate" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#default-framerate'">¶</a></h3>
+<p>The frame rate used to calculate output video duration, etc in Timelapse mode. This will also be used as the default frame rate for export to video (if possible).</p>
+</section>
+<section id="video-codec">
+<h3>Video Codec<a class="headerlink" href="#video-codec" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#video-codec'">¶</a></h3>
+<p>The video codec to use when encoding exported videos.</p>
+<p>Velocity Lapse gives you four popular options, depending on your device:</p>
+<ul class="simple">
+<li><p><span class="guilabel">AVC (H.264)</span> - the most widely used and supported video codec today.</p></li>
+<li><p><span class="guilabel">HEVC (H.265)</span> - meant to be the successor to AVC, offering up to 50% better compression and thus smaller video file sizes. This option is dependent on device support.</p></li>
+<li><p><span class="guilabel">AV1 (AOMedia Video 1)</span> - a newer, open-source codec which offers even better compression while retaining quality. This option is only available on devices running Android 14+.</p></li>
+<li><p><span class="guilabel">APV (Advanced Professional Video)</span> -  a new codec designed to be used for professional level high quality video recording and post production. This option is only available for devices running Android 16+.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">HEVC</span> <span class="pre">(H.265)</span></code> video is not as widely supported across devices and PCs as <code class="docutils literal notranslate"><span class="pre">AVC</span> <span class="pre">(H.264)</span></code> encoded video and the <code class="docutils literal notranslate"><span class="pre">AV1</span> <span class="pre">(AOMedia</span> <span class="pre">Video</span> <span class="pre">1)</span></code> option <strong>does not currently support 4K and 8K video</strong>. Therefore, at this time it is generally recommended that unless you have a specific reason to do otherwise, to stick with <code class="docutils literal notranslate"><span class="pre">AVC</span> <span class="pre">(H.264)</span></code> (the default) or <cite>APV (Advanced Professional Video)</cite> if you need more control.</p>
+</div>
+</section>
+<section id="save-exported-videos-to">
+<h3>Save Exported Videos To<a class="headerlink" href="#save-exported-videos-to" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#save-exported-videos-to'">¶</a></h3>
+<p>The location where videos that are exported from Velocity Lapse will be saved to. Due to Android storage limitations, only the <code class="docutils literal notranslate"><span class="pre">/Pictures</span></code>, <code class="docutils literal notranslate"><span class="pre">/DCIM</span></code>, <code class="docutils literal notranslate"><span class="pre">/Movies</span></code>, or <code class="docutils literal notranslate"><span class="pre">/Documents</span></code> folders <strong>and subfolders</strong> of those locations are supported.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On Android 9 and prior, setting to the SD card is not supported.</p>
+</div>
+</section>
+<section id="save-exported-image-sequences-to">
+<h3>Save Exported Image Sequences To<a class="headerlink" href="#save-exported-image-sequences-to" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#save-exported-image-sequences-to'">¶</a></h3>
+<p>The location where image sequences that are exported from Velocity Lapse will be saved to. Due to Android storage limitations, only the <code class="docutils literal notranslate"><span class="pre">/Pictures</span></code>, <code class="docutils literal notranslate"><span class="pre">/DCIM</span></code>, <code class="docutils literal notranslate"><span class="pre">/Movies</span></code>, or <code class="docutils literal notranslate"><span class="pre">/Documents</span></code> folders <strong>and subfolders</strong> of those locations are supported.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On Android 9 and prior, setting to the SD card is not supported.</p>
+</div>
+</section>
+<section id="keep-image-aspect-ratio">
+<h3>Keep Image Aspect Ratio<a class="headerlink" href="#keep-image-aspect-ratio" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#keep-image-aspect-ratio'">¶</a></h3>
+<p>During export to video, keep the original image aspect ratio rather than cropping to fill the selected video export resolution.</p>
+</section>
+<section id="language">
+<h3>Language<a class="headerlink" href="#language" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#language'">¶</a></h3>
+<p>Change the interface language.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>If you would like to see Velocity Lapse translated into your language and you know English, you can help out. See <a class="reference external" href="https://forum.velocitylapse.com/d/24-help-translate-velocity-lapse">https://forum.velocitylapse.com/d/24-help-translate-velocity-lapse</a> for more details.</p>
+</div>
+</section>
+<section id="visit-user-forum">
+<h3>Visit User Forum<a class="headerlink" href="#visit-user-forum" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#visit-user-forum'">¶</a></h3>
+<p>Visit the Velocity Lapse time lapse forum in a web browser.</p>
+</section>
+<section id="read-user-guide">
+<h3>Read User Guide<a class="headerlink" href="#read-user-guide" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#read-user-guide'">¶</a></h3>
+<p>View this User Guide in a web browser.</p>
+</section>
+<section id="terms-and-conditions">
+<h3>Terms and Conditions<a class="headerlink" href="#terms-and-conditions" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#terms-and-conditions'">¶</a></h3>
+<p>View the Velocity Lapse Terms and Conditions in a web browser.</p>
+</section>
+<section id="privacy-policy">
+<h3>Privacy Policy<a class="headerlink" href="#privacy-policy" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#privacy-policy'">¶</a></h3>
+<p>View the Velocity Lapse Privacy Policy in a web browser.</p>
+</section>
+<section id="licenses-and-credits">
+<h3>Licenses and Credits<a class="headerlink" href="#licenses-and-credits" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#licenses-and-credits'">¶</a></h3>
+<p>View the licenses and credits for Velocity Lapse.</p>
+</section>
+<section id="app-version-information">
+<h3>App Version Information<a class="headerlink" href="#app-version-information" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#app-version-information'">¶</a></h3>
+<p>Tap on the version to copy it to your clipboard.</p>
+</section>
+</section>
+</section>
+</div></div><aside class="hidden text-sm xl:block" id="right-sidebar">
+<div class="sticky top-16 -mt-10 max-h-[calc(100vh-5rem)] overflow-y-auto pt-6 space-y-2"><p class="font-medium">On this page</p>
+<ul>
+<li><a :data-current="activeSection === '#id1'" class="reference internal" href="#id1">Settings</a><ul>
+<li><a :data-current="activeSection === '#share-feedback-or-suggestion'" class="reference internal" href="#share-feedback-or-suggestion">Share Feedback Or Suggestion</a></li>
+<li><a :data-current="activeSection === '#filename-format'" class="reference internal" href="#filename-format">Filename Format</a></li>
+<li><a :data-current="activeSection === '#file-format'" class="reference internal" href="#file-format">File Format</a></li>
+<li><a :data-current="activeSection === '#default-capture-resolution'" class="reference internal" href="#default-capture-resolution">Default Capture Resolution</a></li>
+<li><a :data-current="activeSection === '#default-capture-time-delay'" class="reference internal" href="#default-capture-time-delay">Default Capture Time Delay</a></li>
+<li><a :data-current="activeSection === '#flashlight-auto-mode'" class="reference internal" href="#flashlight-auto-mode">Flashlight Auto Mode</a></li>
+<li><a :data-current="activeSection === '#keep-screen-awake'" class="reference internal" href="#keep-screen-awake">Keep Screen Awake</a></li>
+<li><a :data-current="activeSection === '#ask-for-a-project-name'" class="reference internal" href="#ask-for-a-project-name">Ask For A Project Name</a></li>
+<li><a :data-current="activeSection === '#show-project-presets'" class="reference internal" href="#show-project-presets">Show project presets</a></li>
+<li><a :data-current="activeSection === '#apply-timestamp'" class="reference internal" href="#apply-timestamp">Apply Timestamp</a></li>
+<li><a :data-current="activeSection === '#timestamp-format'" class="reference internal" href="#timestamp-format">Timestamp Format</a></li>
+<li><a :data-current="activeSection === '#timestamp-position'" class="reference internal" href="#timestamp-position">Timestamp Position</a></li>
+<li><a :data-current="activeSection === '#timestamp-size'" class="reference internal" href="#timestamp-size">Timestamp Size</a></li>
+<li><a :data-current="activeSection === '#timestamp-color'" class="reference internal" href="#timestamp-color">Timestamp Color</a></li>
+<li><a :data-current="activeSection === '#timestamp-shadow'" class="reference internal" href="#timestamp-shadow">Timestamp Shadow</a></li>
+<li><a :data-current="activeSection === '#default-framerate'" class="reference internal" href="#default-framerate">Default Framerate</a></li>
+<li><a :data-current="activeSection === '#video-codec'" class="reference internal" href="#video-codec">Video Codec</a></li>
+<li><a :data-current="activeSection === '#save-exported-videos-to'" class="reference internal" href="#save-exported-videos-to">Save Exported Videos To</a></li>
+<li><a :data-current="activeSection === '#save-exported-image-sequences-to'" class="reference internal" href="#save-exported-image-sequences-to">Save Exported Image Sequences To</a></li>
+<li><a :data-current="activeSection === '#keep-image-aspect-ratio'" class="reference internal" href="#keep-image-aspect-ratio">Keep Image Aspect Ratio</a></li>
+<li><a :data-current="activeSection === '#language'" class="reference internal" href="#language">Language</a></li>
+<li><a :data-current="activeSection === '#visit-user-forum'" class="reference internal" href="#visit-user-forum">Visit User Forum</a></li>
+<li><a :data-current="activeSection === '#read-user-guide'" class="reference internal" href="#read-user-guide">Read User Guide</a></li>
+<li><a :data-current="activeSection === '#terms-and-conditions'" class="reference internal" href="#terms-and-conditions">Terms and Conditions</a></li>
+<li><a :data-current="activeSection === '#privacy-policy'" class="reference internal" href="#privacy-policy">Privacy Policy</a></li>
+<li><a :data-current="activeSection === '#licenses-and-credits'" class="reference internal" href="#licenses-and-credits">Licenses and Credits</a></li>
+<li><a :data-current="activeSection === '#app-version-information'" class="reference internal" href="#app-version-information">App Version Information</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</aside>
+</main>
+</div>
+</div><footer class="py-6 border-t border-border md:py-0">
+<div class="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+<div class="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
+<p class="text-sm leading-loose text-center text-muted-foreground md:text-left">© 2025, Noah Rahm Built with <a class="font-medium underline underline-offset-4" href="https://www.sphinx-doc.org" rel="noreferrer">Sphinx 8.2.3</a></p>
+</div>
+</div>
+</footer>
+</div>
+<script src="_static/documentation_options.js?v=5929fcd5"></script>
+<script src="_static/doctools.js?v=9bcbadda"></script>
+<script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+<script defer="defer" src="_static/theme.js?v=073f68d9"></script>
+</body>
+</html>

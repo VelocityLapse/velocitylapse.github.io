@@ -1,0 +1,11 @@
+html.dark body {
+    background-color: #111314 !important;
+}
+html.dark header {
+    background-color: #111314 !important;
+}
+aside img,
+header img {
+    border-radius: 6px;
+    filter: none !important;
+}
