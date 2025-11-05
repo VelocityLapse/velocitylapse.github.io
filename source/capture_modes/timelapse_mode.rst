@@ -32,6 +32,19 @@ Capture Resolution
 
 Change the resolution of the captured photos from preset options. If the selected resolution preset is not available on the device, it will automatically drop down to the next highest supported resolution. Max available resolution looks for the highest supported resolution available to third-party devices.
 
+
+Preview
+-------
+
+The camera preview in the center of the screen allows you to see what the camera will capture.
+
+Before capture, tapping anywhere on the preview will set the focus/exposure point to that location, but after the capture is started *double-tapping* the preview is required to set the point.
+
+Following the standard behavior of camera apps, the normal camera preview is limited to 1/5 of a second of shutter speed. This means that when setting shutter speeds longer than 1/5 of a second, it would not be WYSIWYG in the normal preview. 
+
+For this reason, Velocity Lapse has a special preview called the **Long Exposure Preview**. Enabling this preview will enable you to see an accurate, but not real-time, photo preview with the current long-exposure settings.
+
+
 Bottom Bar
 ----------
 
@@ -143,10 +156,6 @@ Set how long the camera lens stays open to gather light into the lens.
     
 .. note::
     Experimental feature: Velocity Lapse extends the shutter speed range past the normal amounts for certain device models, but again, this still depends on the device.
-
-Following the standard behavior of camera apps, the normal camera preview is limited to 1/5 of a second of shutter speed. This means that when setting shutter speeds longer than 1/5 of a second, it would not be WYSIWYG in the normal preview. 
-
-For this reason, Velocity Lapse has a special preview called the **Long Exposure Preview**. Enabling this preview will enable you to see an accurate, but not real-time, photo preview with the current long-exposure settings.
 
 ISO
 ^^^
