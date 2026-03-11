@@ -1,2 +1,3 @@
 sphinx
 sphinxawesome-theme
+rst2pdf
