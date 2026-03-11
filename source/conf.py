@@ -15,7 +15,6 @@ author = 'Noah Rahm'
 
 extensions = [
     'rst2pdf.pdfbuilder',
-    'myst_parser',
 ]
 
 templates_path = ['_templates']
@@ -54,10 +53,3 @@ pdf_fit_mode = "shrink"
 
 # Background images fitting mode
 pdf_fit_background_mode = 'scale'
-
-# Code block style
-pygments_style = 'sphinx'
-
-myst_enable_extensions = [
-    "colon_fence",
-]

@@ -1,3 +1,2 @@
-sphinx==7.4.7
-sphinxawesome-theme==6.0.0
-rst2pdf
+sphinx
+sphinxawesome-theme
