@@ -7,7 +7,7 @@ This is the repository of the user guide for [Velocity Lapse](https://velocityla
 
 All contributions are welcome!
 
-The manual is written in ReStructuredText and uses Sphinx to build the HTML.
+The manual is written in Markdown and uses Sphinx to build the HTML.
 
 
 ## Building from source

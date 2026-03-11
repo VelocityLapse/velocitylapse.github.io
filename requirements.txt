@@ -1,4 +1,4 @@
-sphinx
-sphinxawesome-theme
-rst2pdf
-rst-to-myst[sphinx]
+sphinx==7.4.7
+sphinxawesome-theme==6.0.0
+rst2pdf==0.103.1
+rst-to-myst==0.4.0
