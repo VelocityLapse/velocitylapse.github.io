@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Velocity Lapse'
-copyright = '2025, Noah Rahm'
+copyright = '2026, Noah Rahm'
 author = 'Noah Rahm'
 
 # -- General configuration ---------------------------------------------------
@@ -15,6 +15,7 @@ author = 'Noah Rahm'
 
 extensions = [
     'rst2pdf.pdfbuilder',
+    'myst_parser',
 ]
 
 templates_path = ['_templates']
@@ -53,3 +54,10 @@ pdf_fit_mode = "shrink"
 
 # Background images fitting mode
 pdf_fit_background_mode = 'scale'
+
+# Code block style
+pygments_style = 'sphinx'
+
+myst_enable_extensions = [
+    "colon_fence",
+]

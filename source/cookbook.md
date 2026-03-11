@@ -1,19 +1,14 @@
-########
-Cookbook
-########
+# Cookbook
 
 Recipes of specific how-tos using Velocity Lapse to capture different time-lapse subjects.
 
-
-Astrophotography
-----------------
+## Astrophotography
 
 Velocity Lapse has many features enabling the creation of astro time-lapses on supported devices.
 
-Capturing
-^^^^^^^^^
+### Capturing
 
-The most important settings for capturing astro images are :guilabel:`shutter speed` and :guilabel:`ISO`. 
+The most important settings for capturing astro images are {guilabel}`shutter speed` and {guilabel}`ISO`.
 
 *The shutter speed and ISO ranges in Velocity Lapse depend on what your device allows third-party apps like Velocity Lapse to access. For shutter speed, this is unfortunately often much less than what the stock camera app can access.*
 
@@ -27,16 +22,12 @@ Ideally, you want to find a place away from cities and artificial lighting where
 
 Experimentation is key!
 
+### The Night Sky
 
-The Night Sky
-^^^^^^^^^^^^^
+You can find an informative video tutorial showing how you can create a time-lapse of the starry night sky using Velocity Lapse [here](https://www.youtube.com/watch?v=uySrvCVA-Us). *(The video is from 2022, so the app interface is different but the concepts remain the same).*
 
-You can find an informative video tutorial showing how you can create a time-lapse of the starry night sky using Velocity Lapse `here <https://www.youtube.com/watch?v=uySrvCVA-Us>`_. *(The video is from 2022, so the app interface is different but the concepts remain the same).*
-
-
-Star Trails
-^^^^^^^^^^^
+### Star Trails
 
 Velocity Lapse has the ability to create star trail time-lapse videos.
 
-`Click here <https://youtube.com/shorts/xUZl67wRJxM>`_ for quick video demonstrating how the :guilabel:`Light Trails` video effect feature in Velocity Lapse can be used to create star trails.
+[Click here](https://youtube.com/shorts/xUZl67wRJxM) for quick video demonstrating how the {guilabel}`Light Trails` video effect feature in Velocity Lapse can be used to create star trails.

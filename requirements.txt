@@ -1,3 +1,4 @@
 sphinx
 sphinxawesome-theme
 rst2pdf
+rst-to-myst[sphinx]
