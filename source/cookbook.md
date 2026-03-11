@@ -6,7 +6,7 @@ Recipes of specific how-tos using Velocity Lapse to capture different time-lapse
 
 Velocity Lapse has many features enabling the creation of astro time-lapses on supported devices.
 
-### Capturing
+### General
 
 The most important settings for capturing astro images are {guilabel}`shutter speed` and {guilabel}`ISO`.
 
