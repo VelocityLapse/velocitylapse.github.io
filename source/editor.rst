@@ -40,7 +40,7 @@ Action Bar
 Reverse
 ^^^^^^^
 
-Reverse the current timelapse project frames order so that the start is the end and vice-versa.
+Reverse the current project frames order so that the start is the end and vice-versa.
 
 
 Adding Images to a Project
