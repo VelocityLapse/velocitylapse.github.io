@@ -34,6 +34,15 @@ Along the very top the appbar will change to show three options:
 To cancel multi-selection mode, tap the close button in the top-left corner.
 
 
+Action Bar
+----------
+
+Reverse
+^^^^^^^
+
+Reverse the current timelapse project frames order so that the start is the end and vice-versa.
+
+
 Adding Images to a Project
 --------------------------
 
