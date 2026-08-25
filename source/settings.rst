@@ -14,6 +14,13 @@ Share Feedback Or Suggestion
 
 Help make Velocity Lapse better by share your feedback and comments with me (the developer).
 
+Camera sensor calibration
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Run a one-time camera sensor hardware diagnostic to check each available lens on your device for "hidden" shutter speeds. 
+
+Sometimes a device will report a more conservative range of shutter speeds than what is actually possible with the device camera hardware. The camera sensor calibration feature aims to help resolve the issue. When a greater range is possible but "hidden" by the API, the calibration will test each lens to check for the full possible range.
+
 Filename Format
 ^^^^^^^^^^^^^^^
 
