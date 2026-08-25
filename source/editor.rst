@@ -40,7 +40,7 @@ Action Bar
 Reverse
 ^^^^^^^
 
-Reverse the current project frames order so that the start is the end and vice-versa.
+Reverse the current project frames order so that the start is the end and vice-versa. Please note that this is applied during export only.
 
 
 Adding Images to a Project
