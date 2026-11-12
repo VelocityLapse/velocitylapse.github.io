@@ -15,6 +15,8 @@ Currently, Velocity Lapse runs on mobile phones and tablets running Android 7+ a
 
 For support or feature requests please email hi@velocitylapse.com.
 
+Looking for the PDF version of the user guide? Download it `here <https://github.com/VelocityLapse/velocitylapse.github.io/releases/download/latest/documentation.pdf>`_.
+
 .. tip::
    Long pressing on most interface elements will bring up a tooltip.
 
